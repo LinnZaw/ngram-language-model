@@ -84,12 +84,6 @@ else:
 # 4. REMOVE ITALIC MARKERS
 # ============================================================
 
-# Project Gutenberg sometimes represents italic words like:
-#
-# _the_
-# _woman_
-#
-# We remove the underscores but keep the actual word.
 
 text = re.sub(r"_([^_]+)_", r"\1", text)
 
@@ -97,9 +91,6 @@ text = re.sub(r"_([^_]+)_", r"\1", text)
 # ============================================================
 # 5. NORMALIZE WHITESPACE
 # ============================================================
-
-# Replace newlines, tabs, and multiple spaces
-# with a single space.
 
 text = re.sub(r"\s+", " ", text)
 

@@ -398,38 +398,3 @@ print(
     f"Lidstone α=1.0: "
     f"{trigram_lidstone(word1, word2, word3, 1.0):.10f}"
 )
-
-
-# ============================================================
-# 9. SUMMARY
-# ============================================================
-
-print()
-print("=" * 60)
-print("SUMMARY")
-print("=" * 60)
-
-print()
-print("MLE:")
-print("  Uses the original frequency directly.")
-
-print()
-print("Laplace:")
-print("  Adds 1 to every possible N-gram count.")
-
-print()
-print("Lidstone:")
-print("  Adds a smaller value alpha to every N-gram count.")
-
-print()
-print("Alpha values tested:")
-print("  α = 0.1")
-print("  α = 0.5")
-print("  α = 1.0")
-
-print()
-print("Note:")
-print("Lidstone α = 1.0 is equivalent to Laplace smoothing.")
-
-print()
-print("=" * 60)
