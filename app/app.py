@@ -45,7 +45,7 @@ st.divider()
 
 text = st.text_input(
     "Enter your text",
-    placeholder="Example: sherlock holmes"
+    placeholder="Example: sherlock holmes" 
 )
 
 
